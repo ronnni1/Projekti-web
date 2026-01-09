@@ -51,5 +51,76 @@
 		</nav>
 	</header>
 	
+	<!-- Hero/Slider Section -->
+	<section class="hero-slider">
+		<div class="slider-bg" style="background: url('Assets/silhouette_fisherman_fishing_rod_219226_3840x2400.jpg') center/cover no-repeat; min-height: 420px; position: relative;">
+			<div class="slider-content">
+				<span class="slider-label">WELCOME TO PESHKATARI.KS</span>
+				<h1>WE LIKE FISHING IT IS ALWAYS A WAY OF RELAXING</h1>
+				<p>Sometimes you want to go where everybody knows your name and they're always glad you came<br>
+				So join us here each week my friends you're sure to get a smile from us</p>
+				<div class="slider-buttons">
+					<a href="#" class="btn-learn">LEARN MORE</a>
+					<a href="#" class="btn-contact">CONTACT US</a>
+				</div>
+			</div>
+			<!-- Slider arrows -->
+			<button class="slider-arrow left" aria-label="Previous Slide">&#10094;</button>
+			<button class="slider-arrow right" aria-label="Next Slide">&#10095;</button>
+		</div>
+		<div class="slider-categories">
+			<div class="category">
+				<img src="Assets/360_F_172881098_5t2qZoU6PHz57hCVNbt5K6R0acCXRqGN.jpg" alt="Fishing Equipments" class="circle-img">
+				<span class="category-label">FISHING EQUIPMENTS</span>
+			</div>
+			<div class="category">
+				<img src="Assets/pexels-szafran-32468798.jpg" alt="Fishing Competition" class="circle-img">
+				<span class="category-label">FISHING COMPETITION</span>
+			</div>
+			<div class="category">
+				<img src="Assets/top-view-fishing-essentials-with-paper-bag-sheet-paper_23-2148429490.avif" alt="Fishing Tools" class="circle-img">
+				<span class="category-label">FISHING TOOLS</span>
+			</div>
+		</div>
+	</section>
+
+	<script>
+// Slider images array
+const sliderImages = [
+  'Assets/silhouette_fisherman_fishing_rod_219226_3840x2400.jpg',
+  'Assets/pexels-freestockpro-319934.jpg',
+  'Assets/large.jpg'
+];
+let currentSlide = 0;
+
+function showSlide(index) {
+  const sliderBg = document.querySelector('.slider-bg');
+  if (sliderBg) {
+    sliderBg.style.background = `url('${sliderImages[index]}') center/cover no-repeat`;
+  }
+}
+
+// Next slide
+const rightBtn = document.querySelector('.slider-arrow.right');
+if (rightBtn) {
+  rightBtn.addEventListener('click', function() {
+    currentSlide = (currentSlide + 1) % sliderImages.length;
+    showSlide(currentSlide);
+  });
+}
+// Previous slide
+const leftBtn = document.querySelector('.slider-arrow.left');
+if (leftBtn) {
+  leftBtn.addEventListener('click', function() {
+    currentSlide = (currentSlide - 1 + sliderImages.length) % sliderImages.length;
+    showSlide(currentSlide);
+  });
+}
+// Initialize first slide
+window.addEventListener('DOMContentLoaded', function() {
+  showSlide(currentSlide);
+});
+</script>
+	
 </body>
 </html>
