@@ -9,6 +9,46 @@
 	<!-- Bootstrap Icons -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.min.css">
 	<link rel="stylesheet" href="style.css">
+	<style>
+body, p, .gallery-desc, .testimonials-desc, .why-join-desc, .news-desc, .news-card-desc, .fishing-spots-section p, .testimonial-quote, .testimonial-role, .testimonial-author, .partners-title, .partners-highlight, .why-join-bar-label, .news-card-meta, .news-card-title {
+  font-size: 0.97rem !important;
+}
+.news-title, .why-join-title, .gallery-title, .testimonials-title, .partners-title {
+  font-size: 2.1rem !important;
+}
+.why-join-bar {
+  background: #e6f4ff;
+  border-radius: 8px;
+  height: 12px;
+  width: 100%;
+  margin-bottom: 18px;
+  position: relative;
+  overflow: hidden;
+}
+.why-join-bar-fill {
+  background: #00baff;
+  height: 100%;
+  width: 0%;
+  border-radius: 8px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: width 0.3s linear;
+}
+.why-join-bar-label {
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #222;
+}
+.why-join-bar-percent {
+  position: absolute;
+  right: 8px;
+  top: -22px;
+  color: #222;
+  font-weight: 700;
+  font-size: 1rem;
+}
+</style>
 </head>
 <body>
 	
@@ -39,9 +79,7 @@
 				<li class="active"><a href="#">HOME</a></li>
 				<li><a href="#">ABOUT US</a></li>
 				<li><a href="#">SERVICES</a></li>
-				<li><a href="#">PAGES</a></li>
 				<li><a href="#">SHOP</a></li>
-				<li><a href="#">LATEST NEWS</a></li>
 				<li><a href="#">CONTACT US</a></li>
 			</ul>
 			<form class="search-form">
@@ -59,10 +97,6 @@
 				<h1>WE LIKE FISHING IT IS ALWAYS A WAY OF RELAXING</h1>
 				<p>Sometimes you want to go where everybody knows your name and they're always glad you came<br>
 				So join us here each week my friends you're sure to get a smile from us</p>
-				<div class="slider-buttons">
-					<a href="#" class="btn-learn">LEARN MORE</a>
-					<a href="#" class="btn-contact">CONTACT US</a>
-				</div>
 			</div>
 			<!-- Slider arrows -->
 			<button class="slider-arrow left" aria-label="Previous Slide">&#10094;</button>
@@ -78,12 +112,190 @@
 				<span class="category-label">FISHING COMPETITION</span>
 			</div>
 			<div class="category">
-				<img src="Assets/top-view-fishing-essentials-with-paper-bag-sheet-paper_23-2148429490.avif" alt="Fishing Tools" class="circle-img">
+				<img src="Assets/fishing-gear-1900956868_1024x1024.webp" alt="Fishing Tools" class="circle-img">
 				<span class="category-label">FISHING TOOLS</span>
 			</div>
 		</div>
-	</section>
+		</section>
 
+		<!-- Gallery Section -->
+		<section class="gallery-section">
+			<div class="gallery-header" style="text-align: center;">
+				<span class="gallery-label">Our Gallery</span>
+				<h2 class="gallery-title">Snapshots of Adventure, Discover Our Fishing Gallery</h2>
+				<p class="gallery-desc">Enjoy unforgettable moments with friends and family, capture new adventures, and discover the beauty of nature in every photo of our fishing gallery.</p>
+			</div>
+			<div class="gallery-grid">
+				<img src="Assets/DSC08971-scaled.webp" alt="Fishing 1">
+				<img src="Assets/Depositphotos_162691514_L.webp" alt="Fishing 2">
+				<img src="Assets/istockphoto-2215706232-612x612.jpg" alt="Fishing 3">
+				<img src="Assets/istockphoto-155968067-612x612.jpg" alt="Fishing 4">
+				<img src="Assets/caption.jpg" alt="Fishing 5">
+				<img src="Assets/getty.jpg" alt="Fishing 6">
+				<img src="Assets/7.webp" alt="Fishing 7">
+				<img src="Assets/team.jpg" alt="Fishing 8">
+			</div>
+		</section>
+ </section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section">
+	<div class="testimonials-header">
+		<span class="testimonials-label">Testimonials</span>
+		<h2 class="testimonials-title">See Experiences from Our Community</h2>
+		<p class="testimonials-desc">Discover what our members have to say about their fishing adventures and community moments.</p>
+	</div>
+	<div class="testimonials-grid">
+		<div class="testimonial-story">
+			<div class="testimonial-video-wrapper" style="position:relative;">
+			<div class="testimonial-card">
+				<div class="testimonial-stars">★★★★★</div>
+				<div class="testimonial-quote">“Fishing trips with my friends are always full of laughter and great memories. I love sharing these moments!”</div>
+				<div class="testimonial-author">
+					<span class="testimonial-name">Linda Carter</span><br>
+					<span class="testimonial-role">Outdoor Enthusiast</span>
+				</div>
+			</div>
+			</div>
+			
+		</div>
+		<div class="testimonial-card">
+			<div class="testimonial-stars">★★★★★</div>
+			<div class="testimonial-quote">“Fishing with this community is always a pleasure. The support and tips I get are invaluable!”</div>
+			<div class="testimonial-author">
+				<span class="testimonial-name">Erwin Benedict</span><br>
+				<span class="testimonial-role">Fisherman</span>
+			</div>
+		</div>
+		<div class="testimonial-card">
+			<div class="testimonial-stars">★★★★☆</div>
+			<div class="testimonial-quote">“Great people, great places! Every trip is a new adventure and a chance to learn something new.”</div>
+			<div class="testimonial-author">
+				<span class="testimonial-name">Arthur Devon</span><br>
+				<span class="testimonial-role">Fisherman</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Why Join Section -->
+<div class="why-join-section">
+  <div class="why-join-grid">
+    <div class="why-join-left">
+      <span class="why-join-label">Why Join Us</span>
+      <h2 class="why-join-title">Why We Are The Right Choice for Every Angler</h2>
+      <p class="why-join-desc">Join our fishing community and benefit from experience, advice, and new friendships. We offer quality equipment, special activities, and exclusive fishing spots. Discover your passion and become part of the adventure!</p>
+      <div class="why-join-bar-group">
+        <div class="why-join-bar-label">Pajisje Cilësore</div>
+        <div class="why-join-bar" style="position:relative;">
+          <div class="why-join-bar-fill" data-target="98"></div>
+          <span class="why-join-bar-percent">0%</span>
+        </div>
+        <div class="why-join-bar-label">Anëtarë të Lumtur</div>
+        <div class="why-join-bar" style="position:relative;">
+          <div class="why-join-bar-fill" data-target="98"></div>
+          <span class="why-join-bar-percent">0%</span>
+        </div>
+      </div>
+      <button class="why-join-btn">Join our Community</button>
+    </div>
+    <div class="why-join-img-wrap">
+      <img src="Assets/premium_photo-1661762422433-b18f87b64341 (1).avif" alt="Fishing" class="why-join-img">
+    </div>
+    <div class="why-join-right">
+      <div class="why-join-feature">
+        <span class="why-join-feature-icon">🎫</span>
+        <div>
+          <div class="why-join-feature-title">Qasje në Evente & Udhëtime Speciale</div>
+          <div class="why-join-feature-desc">Ne bashkojmë njerëzit e duhur për të sfiduar mendimin tradicional dhe për të sjellë ndryshime pozitive në komunitet.</div>
+        </div>
+      </div>
+      <div class="why-join-feature">
+        <span class="why-join-feature-icon">🗺️</span>
+        <div>
+          <div class="why-join-feature-title">Vende Ekskluzive për Peshkim</div>
+          <div class="why-join-feature-desc">Ne ofrojmë mundësi të veçanta për të eksploruar vende të reja dhe të mrekullueshme për peshkim.</div>
+        </div>
+      </div>
+      <div class="why-join-feature">
+        <span class="why-join-feature-icon">🌐</span>
+        <div>
+          <div class="why-join-feature-title">Mundësi Rrjetëzimi</div>
+          <div class="why-join-feature-desc">Bashkohu me komunitetin tonë për të krijuar miqësi të reja dhe për të ndarë pasionin për peshkimin me të tjerët.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Partners Section -->
+<section class="partners-section">
+  <div class="partners-container">
+    <h2 class="partners-title">Discover Our Fishing<br>Club <span class="partners-highlight">Partners</span></h2>
+    <div class="partners-logos">
+      <img src="Assets/Logo.webp" alt="Partner 1" class="partner-logo">
+      <img src="Assets/logo-32.webp" alt="Partner 2" class="partner-logo">
+      <img src="Assets/Frame.webp" alt="Partner 3" class="partner-logo">
+    </div>
+  </div>
+</section>
+
+<!-- News Section -->
+<section class="news-section">
+  <div class="news-header">
+    <span class="news-label">Angler's Update</span>
+    <h2 class="news-title">Stay Informed with Our News,<br>Tips, and Fishing Updates</h2>
+    <p class="news-desc">Get the latest updates, tips, and stories from our fishing club. Stay connected and informed about all our activities and adventures.</p>
+  </div>
+  <div class="news-grid">
+    <div class="news-card">
+      <img src="Assets/group-of-diverse-friend-having-outdoors-camping-pa-2023-11-27-05-36-21-utc.webp" alt="Club Gathering" class="news-img">
+      <div class="news-card-title">Looking Back at Our Recent Club Gathering Recap</div>
+      <div class="news-card-meta">
+        <span><i class="bi bi-calendar"></i> October 17, 2024</span>
+        <span><i class="bi bi-folder"></i> Uncategorized</span>
+      </div>
+      <div class="news-card-desc">Our recent club gathering was filled with laughter, great food, and memorable fishing stories. Members shared their best catches and enjoyed a relaxing day by the water.</div>
+    </div>
+    <div class="news-card">
+      <img src="Assets/pull-dad-2024-03-26-00-23-24-utc.webp" alt="Fishing with Kids" class="news-img">
+      <div class="news-card-title news-card-title-blue">Fishing with Kids and Making Their First Catch Memorable</div>
+      <div class="news-card-meta">
+        <span><i class="bi bi-calendar"></i> October 16, 2024</span>
+        <span><i class="bi bi-folder"></i> Uncategorized</span>
+      </div>
+      <div class="news-card-desc">Teaching kids to fish is a rewarding experience. Our club members helped children make their first catch, creating memories that will last a lifetime.</div>
+    </div>
+    <div class="news-card">
+      <img src="Assets/man-standing-near-old-male-sitting-and-fishing-2023-11-27-05-12-04-utc.webp" alt="Fishing Location" class="news-img">
+      <div class="news-card-title"> Essentials Tips on Choosing the Perfect Fishing Location</div>
+      <div class="news-card-meta">
+        <span><i class="bi bi-calendar"></i> October 15, 2024</span>
+        <span><i class="bi bi-folder"></i> Uncategorized</span>
+      </div>
+      <div class="news-card-desc">Find the best fishing spots with our expert tips. Learn how to choose locations that offer great catches and beautiful scenery for your next trip.</div>
+    </div>
+  </div>
+</section>
+
+</body>
+	<script>
+	const playBtn = document.getElementById('playCommunityVideo');
+	const video = document.getElementById('communityVideo');
+	if(playBtn && video){
+		playBtn.addEventListener('click', function(){
+			video.play();
+			playBtn.style.display = 'none';
+		});
+		video.addEventListener('pause', function(){
+			playBtn.style.display = '';
+		});
+		video.addEventListener('play', function(){
+			playBtn.style.display = 'none';
+		});
+	}
+	</script>
+	
 	<script>
 // Slider images array
 const sliderImages = [
@@ -122,5 +334,40 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 	
+	<script>
+function animateBarsOnView() {
+  document.querySelectorAll('.why-join-bar').forEach(function(barWrap) {
+    var fill = barWrap.querySelector('.why-join-bar-fill');
+    var percent = barWrap.querySelector('.why-join-bar-percent');
+    var target = parseInt(fill.getAttribute('data-target'), 10);
+    if (barWrap.dataset.animated === 'true') return;
+    var rect = barWrap.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      barWrap.dataset.animated = 'true';
+      var current = 0;
+      fill.style.width = '0%';
+      percent.textContent = '0%';
+      percent.style.left = '0%';
+      var interval = setInterval(function() {
+        if (current < target) {
+          current++;
+          fill.style.width = current + '%';
+          percent.textContent = current + '%';
+          percent.style.left = 'calc(' + current + '% - 24px)';
+        } else {
+          fill.style.width = target + '%';
+          percent.textContent = target + '%';
+          percent.style.left = 'calc(' + target + '% - 24px)';
+          clearInterval(interval);
+        }
+      }, 18);
+    }
+  });
+}
+window.addEventListener('scroll', animateBarsOnView);
+window.addEventListener('DOMContentLoaded', animateBarsOnView);
+</script>
+	
 </body>
-</html>
+</body>
+
