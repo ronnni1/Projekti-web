@@ -1,3 +1,119 @@
+/* --- Footer Contact Styles --- */
+.footer-contact {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #1a3a4a;
+  margin: 6px 0 0 0;
+}
+.footer-contact span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1rem;
+  color: #1a3a4a;
+}
+.footer-contact i {
+  color: #00baff;
+  font-size: 1.1rem;
+}
+@media (max-width: 600px) {
+  .footer-contact {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.97rem;
+  }
+}
+/* --- End Footer Contact Styles --- */
+/* --- Modern Simple Footer --- */
+.site-footer {
+  background: linear-gradient(90deg, #e6f4ff 0%, #b6e0fe 100%);
+  color: #1a3a4a;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 32px 32px 0 0;
+  box-shadow: 0 -2px 24px rgba(33,150,243,0.07);
+  margin-top: 60px;
+  padding: 0;
+}
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 16px 18px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+.footer-logo-text {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.footer-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #00baff;
+}
+.footer-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #00baff;
+  letter-spacing: 1px;
+}
+.footer-links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-links a {
+  color: #1a3a4a;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.footer-links a:hover {
+  color: #00baff;
+}
+.footer-social {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+}
+.footer-social a {
+  color: #00baff;
+  font-size: 1.3rem;
+  transition: color 0.2s, transform 0.2s;
+}
+.footer-social a:hover {
+  color: #1a3a4a;
+  transform: scale(1.15);
+}
+.footer-copy {
+  font-size: 0.98rem;
+  color: #1a3a4a;
+  margin-top: 8px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .footer-content {
+    padding: 18px 4px 10px 4px;
+    gap: 10px;
+  }
+  .footer-links {
+    gap: 12px;
+  }
+  .footer-logo-text {
+    gap: 6px;
+  }
+}
+/* --- End Modern Simple Footer --- */
 /* Gallery Section */
 .gallery-section {
     background: #f3fafd;
