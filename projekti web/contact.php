@@ -1,12 +1,12 @@
 <?php
 $host = "localhost";
 $user = "root";
-$password = ""; // ose passwordi yt
+$password = ""; // your password if any
 $dbname = "projekti_web";
 
 $conn = new mysqli($host, $user, $password, $dbname);
 if ($conn->connect_error) {
-    die("Lidhja dështoi: " . $conn->connect_error);
+    die("Connection failed: " . $conn->connect_error);
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -17,13 +17,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = isset($_POST["message"]) ? $conn->real_escape_string($_POST["message"]) : '';
 
     if ($name == '' || $email == '' || $message == '') {
-        echo "Gabim: Të gjitha fushat janë të detyrueshme.";
+        echo "Error: All fields are required.";
     } else {
         $sql = "INSERT INTO contact_messages (name, email, message) VALUES ('$name', '$email', '$message')";
         if ($conn->query($sql) === TRUE) {
-            echo "Mesazhi u dërgua me sukses!";
+            echo "Message sent successfully!";
         } else {
-            echo "Gabim: " . $conn->error;
+            echo "Error: " . $conn->error;
         }
     }
 }
